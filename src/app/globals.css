@@ -1,26 +1,104 @@
 @import "tailwindcss";
 
+@theme {
+	/* Brand yellow — the sun in the logo */
+	--color-brand-yellow-50: #fffcf0;
+	--color-brand-yellow-100: #fff8e1;
+	--color-brand-yellow-200: #fff1bd;
+	--color-brand-yellow-300: #ffe790;
+	--color-brand-yellow-400: #feda54;
+	--color-brand-yellow-500: #fec803;
+	--color-brand-yellow-600: #daac03;
+	--color-brand-yellow-700: #b28c02;
+	--color-brand-yellow-800: #896c02;
+	--color-brand-yellow-900: #614c01;
+	--color-brand-yellow-950: #3d3001;
+
+	/* Brand blue — the wave in the logo */
+	--color-brand-blue-50: #f0fafb;
+	--color-brand-blue-100: #e1f5f8;
+	--color-brand-blue-200: #bde9ef;
+	--color-brand-blue-300: #90dae5;
+	--color-brand-blue-400: #53c7d6;
+	--color-brand-blue-500: #02acc3;
+	--color-brand-blue-600: #0294a8;
+	--color-brand-blue-700: #017888;
+	--color-brand-blue-800: #015d69;
+	--color-brand-blue-900: #01414a;
+	--color-brand-blue-950: #00292f;
+
+	/* Sunset orange — mid-band of the logo's sunset gradient */
+	--color-sunset-orange-50: #fef7f1;
+	--color-sunset-orange-100: #feeee3;
+	--color-sunset-orange-200: #fcdac1;
+	--color-sunset-orange-300: #fac197;
+	--color-sunset-orange-400: #f89f5e;
+	--color-sunset-orange-500: #f47212;
+	--color-sunset-orange-600: #d2620f;
+	--color-sunset-orange-700: #ab500d;
+	--color-sunset-orange-800: #843e0a;
+	--color-sunset-orange-900: #5d2b07;
+	--color-sunset-orange-950: #3b1b04;
+
+	/* Sunset red — deep band of the logo's sunset gradient */
+	--color-sunset-red-50: #fdf3f1;
+	--color-sunset-red-100: #fbe8e2;
+	--color-sunset-red-200: #f6ccc0;
+	--color-sunset-red-300: #f0a995;
+	--color-sunset-red-400: #e87a5b;
+	--color-sunset-red-500: #dd3c0e;
+	--color-sunset-red-600: #be340c;
+	--color-sunset-red-700: #9b2a0a;
+	--color-sunset-red-800: #772008;
+	--color-sunset-red-900: #541705;
+	--color-sunset-red-950: #350e03;
+
+	/* Ink — warm neutral (tinted off the yellow hue) for text and surfaces */
+	--color-ink-50: #fafaf9;
+	--color-ink-100: #f5f4f2;
+	--color-ink-200: #e6e5e0;
+	--color-ink-300: #cdcac1;
+	--color-ink-400: #a8a494;
+	--color-ink-500: #87816e;
+	--color-ink-600: #6b6657;
+	--color-ink-700: #545145;
+	--color-ink-800: #3b3930;
+	--color-ink-900: #272620;
+	--color-ink-950: #161612;
+
+	/* Semantic roles, built from the palette above */
+	--color-primary: var(--color-brand-yellow-500);
+	--color-primary-foreground: var(--color-ink-950);
+	--color-secondary: var(--color-brand-blue-500);
+	--color-secondary-foreground: #ffffff;
+	--color-accent: var(--color-sunset-orange-500);
+	--color-accent-foreground: #ffffff;
+}
+
 :root {
-	--background: #ffffff;
-	--foreground: #171717;
+	--background: var(--color-brand-yellow-100);
+	--foreground: var(--color-ink-900);
 }
 
 @theme inline {
 	--color-background: var(--background);
 	--color-foreground: var(--foreground);
 	--font-sans: var(--font-geist-sans);
+	--font-heading: var(--font-outfit);
 	--font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-	:root {
-		--background: #0a0a0a;
-		--foreground: #ededed;
-	}
+html {
+	scroll-behavior: smooth;
 }
 
 body {
 	background: var(--background);
 	color: var(--foreground);
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+}
+
+::selection {
+	background: var(--color-brand-blue-500);
+	color: #ffffff;
 }
