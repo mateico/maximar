@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
+import { ArrowRightIcon } from "./icons";
 import { Button } from "./ui/Button";
 import { Container } from "./ui/Container";
 
@@ -11,6 +12,7 @@ const NAV_LINKS = [
 	{ href: "/", label: "Inicio" },
 	{ href: "/servicios", label: "Servicios" },
 	{ href: "/blog", label: "Blog" },
+	{ href: "/galeria", label: "Galería" },
 	{ href: "/nosotros", label: "Nosotros" },
 	{ href: "/contacto", label: "Contacto" },
 ];
@@ -121,6 +123,7 @@ export function Header() {
 				<div className="hidden md:block">
 					<Button href="/contacto" variant="secondary" className="!py-2.5 !px-5 text-sm">
 						Reservá tu clase
+						<ArrowRightIcon className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-1" />
 					</Button>
 				</div>
 
@@ -171,6 +174,7 @@ export function Header() {
 						})}
 						<Button href="/contacto" variant="secondary" className="mt-2 w-full">
 							Reservá tu clase
+							<ArrowRightIcon className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-1" />
 						</Button>
 					</Container>
 				</div>

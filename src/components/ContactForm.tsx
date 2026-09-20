@@ -77,10 +77,10 @@ export function ContactForm() {
 
 			<button
 				type="submit"
-				className="inline-flex w-fit items-center justify-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition-all hover:bg-brand-yellow-400 active:scale-[0.97]"
+				className="group inline-flex w-fit items-center justify-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition-all hover:bg-brand-yellow-400 active:scale-[0.97]"
 			>
 				Enviar mensaje
-				<ArrowRightIcon className="h-4 w-4" />
+				<ArrowRightIcon className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-1" />
 			</button>
 		</form>
 	);

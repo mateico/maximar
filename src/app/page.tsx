@@ -15,10 +15,17 @@ import {
 import { SERVICES } from "@/lib/services";
 import { POSTS } from "@/lib/posts";
 
+const ICON_STYLES = [
+  { text: "text-brand-blue-600" },
+  { text: "text-sunset-orange-600" },
+  { text: "text-brand-yellow-700" },
+  { text: "text-sunset-red-600" },
+];
+
 const HIGHLIGHTS = [
   {
     icon: MedalIcon,
-    title: "Instructores certificados",
+    title: "Instructores certificados IKO",
     description:
       "Equipo con certificación internacional IKO, enfocado en tu seguridad y tu progreso.",
   },
@@ -46,7 +53,7 @@ export default function Home() {
   return (
     <>
       {/* Hero */}
-      <section className="relative overflow-hidden">
+      <section className="relative overflow-hidden bg-red-500">
         <div className="absolute inset-0 bg-gradient-to-br from-brand-yellow-100 via-brand-yellow-50 to-brand-blue-50" />
         <div
           className="absolute -top-24 -right-24 h-96 w-96 rounded-full bg-brand-yellow-400/40 blur-3xl"
@@ -57,11 +64,11 @@ export default function Home() {
           aria-hidden="true"
         />
 
-        <Container className="relative grid gap-12 py-16 sm:py-20 lg:grid-cols-2 lg:items-center lg:py-28">
+        <Container className="relative grid gap-6 sm:gap-12 py-6 sm:py-20 lg:grid-cols-2 lg:items-center lg:py-28">
           <div>
             <span className="inline-flex items-center gap-2 rounded-full bg-white/70 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-ink-700 shadow-sm ring-1 ring-ink-900/5">
               <MapPinIcon className="h-4 w-4 text-secondary" />
-              Playa Malvin, Montevideo
+              Playa Malvin
             </span>
 
             <h1 className="mt-6 font-heading text-4xl font-bold leading-[1.05] text-ink-950 sm:text-5xl lg:text-6xl">
@@ -71,10 +78,8 @@ export default function Home() {
             </h1>
 
             <p className="mt-6 max-w-lg text-lg leading-relaxed text-ink-600">
-              Escuela de kitesurf en el corazón de Montevideo. Clases
-              individuales y grupales, alquiler de equipos e instructores
-              certificados para que te subas a la tabla con confianza, sin
-              importar tu nivel.
+              Escuela de kitesurf en la mejor playa. Instructores certificados
+              para que te subas a la tabla con confianza, sin importar tu nivel.
             </p>
 
             <div className="mt-9 flex flex-wrap gap-4">
@@ -86,36 +91,6 @@ export default function Home() {
                 Ver servicios
               </Button>
             </div>
-
-            <dl className="mt-12 grid max-w-md grid-cols-3 gap-6 border-t border-ink-900/10 pt-8">
-              <div>
-                <dt className="sr-only">Alumnos por temporada</dt>
-                <dd className="font-heading text-2xl font-bold text-ink-950">
-                  +300
-                </dd>
-                <p className="mt-1 text-xs font-medium uppercase tracking-wide text-ink-500">
-                  Alumnos por temporada
-                </p>
-              </div>
-              <div>
-                <dt className="sr-only">Meses de viento</dt>
-                <dd className="font-heading text-2xl font-bold text-ink-950">
-                  12
-                </dd>
-                <p className="mt-1 text-xs font-medium uppercase tracking-wide text-ink-500">
-                  Meses de escuela
-                </p>
-              </div>
-              <div>
-                <dt className="sr-only">Spot</dt>
-                <dd className="font-heading text-2xl font-bold text-ink-950">
-                  1
-                </dd>
-                <p className="mt-1 text-xs font-medium uppercase tracking-wide text-ink-500">
-                  Spot favorito
-                </p>
-              </div>
-            </dl>
           </div>
 
           <div className="relative mx-auto flex w-full max-w-md items-center justify-center">
@@ -130,6 +105,27 @@ export default function Home() {
               />
             </div>
           </div>
+
+          <dl className="mx-auto grid max-w-md grid-cols-2 gap-6 border-t border-ink-900/10 pt-8 text-center lg:col-start-1 lg:mx-0 lg:text-left">
+            <div>
+              <dt className="sr-only">Alumnos por temporada</dt>
+              <dd className="font-heading text-2xl font-bold text-ink-950">
+                +100
+              </dd>
+              <p className="mt-1 text-xs font-medium uppercase tracking-wide text-ink-500">
+                Alumnos por temporada
+              </p>
+            </div>
+            <div>
+              <dt className="sr-only">Meses de viento</dt>
+              <dd className="font-heading text-2xl font-bold text-ink-950">
+                10
+              </dd>
+              <p className="mt-1 text-xs font-medium uppercase tracking-wide text-ink-500">
+                Años de escuela
+              </p>
+            </div>
+          </dl>
         </Container>
 
         <div className="relative" aria-hidden="true">
@@ -151,27 +147,27 @@ export default function Home() {
         <Container>
           <SectionHeading
             eyebrow="Por qué elegirnos"
+            eyebrowClassName="!text-ink-950"
             title="Una escuela pensada para que aprendas rápido y seguro"
             subtitle="Combinamos el mejor spot de la ciudad con instructores certificados y equipos de primera calidad."
+            subtitleClassName="!text-ink-950"
           />
 
           <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            {HIGHLIGHTS.map(({ icon: Icon, title, description }) => (
-              <div
-                key={title}
-                className="group rounded-2xl border border-ink-900/8 bg-white p-6 shadow-sm transition-all hover:-translate-y-1 hover:shadow-lg hover:shadow-ink-900/5"
-              >
-                <div className="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-secondary/10 text-secondary transition-colors group-hover:bg-secondary group-hover:text-white">
-                  <Icon className="h-6 w-6" />
+            {HIGHLIGHTS.map(({ icon: Icon, title }, index) => {
+              const style = ICON_STYLES[index % ICON_STYLES.length];
+              return (
+                <div
+                  key={title}
+                  className="group flex items-center gap-3 rounded-2xl border border-ink-900/8 bg-white p-6 shadow-sm transition-all hover:-translate-y-1 hover:shadow-lg hover:shadow-ink-900/5"
+                >
+                  <Icon className={`h-8 w-8 shrink-0 ${style.text}`} />
+                  <h3 className="font-heading text-lg font-normal text-ink-950">
+                    {title}
+                  </h3>
                 </div>
-                <h3 className="mt-4 font-heading text-lg font-bold text-ink-950">
-                  {title}
-                </h3>
-                <p className="mt-2 text-sm leading-relaxed text-ink-600">
-                  {description}
-                </p>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </Container>
       </section>
@@ -191,36 +187,38 @@ export default function Home() {
               className="!px-0 hover:!bg-transparent"
             >
               Ver todos los servicios
-              <ArrowRightIcon className="h-4 w-4" />
+              <ArrowRightIcon className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-1" />
             </Button>
           </div>
 
           <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {SERVICES.slice(0, 3).map((service) => (
-              <div
-                key={service.slug}
-                className="flex flex-col rounded-2xl bg-white p-7 shadow-sm ring-1 ring-ink-900/5 transition-all hover:-translate-y-1 hover:shadow-lg"
-              >
-                <div
-                  className={`inline-flex h-11 w-11 items-center justify-center rounded-xl ${service.accent}`}
-                >
-                  <service.icon className="h-5 w-5" />
-                </div>
-                <h3 className="mt-5 font-heading text-xl font-bold text-ink-950">
-                  {service.title}
-                </h3>
-                <p className="mt-2 flex-1 text-sm leading-relaxed text-ink-600">
-                  {service.summary}
-                </p>
-                <Link
-                  href="/servicios"
-                  className="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-secondary hover:text-brand-blue-700"
-                >
-                  Ver más
-                  <ArrowRightIcon className="h-3.5 w-3.5" />
-                </Link>
-              </div>
-            ))}
+            {SERVICES.filter((service) => service.slug !== "clases-grupales")
+              .slice(0, 3)
+              .map((service, index) => {
+                const style = ICON_STYLES[index % ICON_STYLES.length];
+                return (
+                  <div
+                    key={service.slug}
+                    className="flex flex-col rounded-2xl bg-white p-7 shadow-sm ring-1 ring-ink-900/5 transition-all hover:-translate-y-1 hover:shadow-lg"
+                  >
+                    <div className="flex items-center gap-3">
+                      <service.icon
+                        className={`h-8 w-8 shrink-0 ${style.text}`}
+                      />
+                      <h3 className="font-heading text-lg font-normal text-ink-950">
+                        {service.title}
+                      </h3>
+                    </div>
+                    <Link
+                      href="/servicios"
+                      className="group mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-secondary hover:text-brand-blue-700"
+                    >
+                      Ver más
+                      <ArrowRightIcon className="h-3.5 w-3.5 transition-transform duration-200 group-hover:translate-x-1" />
+                    </Link>
+                  </div>
+                );
+              })}
           </div>
         </Container>
       </section>
@@ -242,10 +240,9 @@ export default function Home() {
               Playa Malvin, el mejor lugar para aprender
             </h2>
             <p className="mt-5 max-w-lg text-ink-200">
-              Fondo de arena, poca profundidad cerca de la costa y viento
-              constante gran parte del año: las condiciones ideales para dar tus
-              primeros pasos en el kitesurf sin sobresaltos, a minutos del
-              centro de Montevideo.
+              Poca profundidad y viento constante gran parte del año: las
+              condiciones ideales para dar tus primeros pasos en el kitesurf con
+              seguridad.
             </p>
             <ul className="mt-8 space-y-4">
               <li className="flex items-start gap-3">
@@ -261,17 +258,17 @@ export default function Home() {
                   Zona de agua controlada y supervisada por tu instructor.
                 </span>
               </li>
-              <li className="flex items-start gap-3">
-                <MapPinIcon className="mt-0.5 h-5 w-5 shrink-0 text-brand-yellow-400" />
-                <span className="text-sm text-ink-200">
-                  A pocos minutos de la Rambla, con fácil acceso y
-                  estacionamiento.
-                </span>
-              </li>
             </ul>
           </div>
 
-          <div className="relative aspect-[4/3] w-full overflow-hidden rounded-3xl bg-gradient-to-br from-brand-yellow-400 via-sunset-orange-500 to-brand-blue-600 shadow-2xl">
+          <div className="relative aspect-[4/3] w-full overflow-hidden rounded-3xl shadow-2xl">
+            <Image
+              src="/playa-malvin.jpg"
+              alt="Playa Malvín, Montevideo"
+              fill
+              className="object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-br from-brand-yellow-400/60 via-sunset-orange-500/50 to-brand-blue-600/70" />
             <div className="absolute inset-0 flex flex-col items-center justify-center gap-3 text-center">
               <WaveIcon className="h-14 w-14 text-white/90" />
               <p className="font-heading text-2xl font-bold text-white drop-shadow">
@@ -300,7 +297,7 @@ export default function Home() {
               className="!px-0 hover:!bg-transparent"
             >
               Ver todo el blog
-              <ArrowRightIcon className="h-4 w-4" />
+              <ArrowRightIcon className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-1" />
             </Button>
           </div>
 
@@ -346,7 +343,7 @@ export default function Home() {
             <div className="relative mt-8 flex flex-wrap justify-center gap-4">
               <Button href="/contacto" variant="primary">
                 Escribinos ahora
-                <ArrowRightIcon className="h-4 w-4" />
+                <ArrowRightIcon className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-1" />
               </Button>
             </div>
           </div>
