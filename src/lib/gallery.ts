@@ -20,7 +20,7 @@ export const GALLERY: GalleryItem[] = [
 	{
 		slug: "clase-individual",
 		title: "Clase individual",
-		description: "Instrucción personalizada en la orilla de Playa Malvin.",
+		description: "Instrucción personalizada en la orilla de Playa Malvín.",
 		image: "/gallery-5.webp",
 		icon: MedalIcon,
 	},
@@ -47,7 +47,7 @@ export const GALLERY: GalleryItem[] = [
 	},
 	{
 		slug: "atardecer-en-malvin",
-		title: "Atardecer en Malvin",
+		title: "Atardecer en Malvín",
 		description: "Cierre de jornada con las cometas volviendo a la costa.",
 		image: "/gallery-4.webp",
 		icon: WindIcon,

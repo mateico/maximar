@@ -40,7 +40,7 @@ export function Footer() {
             />
           </Link>
           <p className="mt-4 max-w-xs text-sm leading-relaxed text-ink-400">
-            Escuela de kitesurf en Playa Malvin, Montevideo. Clases para todos
+            Escuela de kitesurf en Playa Malvín, Montevideo. Clases para todos
             los niveles, todo el año.
           </p>
           <div className="mt-5 flex gap-3">
@@ -99,7 +99,7 @@ export function Footer() {
           <ul className="mt-4 space-y-3 text-sm text-ink-400">
             <li className="flex items-start gap-2.5">
               <MapPinIcon className="mt-0.5 h-4.5 w-4.5 shrink-0 text-brand-blue-400" />
-              Playa Malvin, Montevideo, Uruguay
+              Playa Malvín, Montevideo, Uruguay
             </li>
             <li className="flex items-center gap-2.5">
               <MailIcon className="h-4.5 w-4.5 shrink-0 text-brand-blue-400" />
@@ -129,7 +129,7 @@ export function Footer() {
             Condiciones de hoy
           </h3>
           <p className="mt-4 text-sm leading-relaxed text-ink-400">
-            ¿Viento a favor? Escribinos y coordinamos tu clase en Playa Malvin
+            ¿Viento a favor? Escribinos y coordinamos tu clase en Playa Malvín
             cuando las condiciones estén ideales.
           </p>
         </div>

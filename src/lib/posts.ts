@@ -9,7 +9,7 @@ export type Post = {
 export const POSTS: Post[] = [
 	{
 		slug: "vientos-playa-malvin-guia-temporada",
-		title: "Vientos en Playa Malvin: guía de temporada",
+		title: "Vientos en Playa Malvín: guía de temporada",
 		excerpt:
 			"Cuándo sopla mejor el viento en Montevideo y cómo leer el pronóstico antes de reservar tu clase de kitesurf.",
 		tag: "Spot",

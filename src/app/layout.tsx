@@ -22,9 +22,9 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-	title: "Maxymar Kiteschool — Escuela de kitesurf en Playa Malvin, Montevideo",
+	title: "Maxymar Kiteschool — Escuela de kitesurf en Playa Malvín, Montevideo",
 	description:
-		"Aprendé a volar sobre el agua en Playa Malvin, Montevideo. Clases individuales y grupales, alquiler de equipos e instructores certificados para todos los niveles.",
+		"Aprendé a volar sobre el agua en Playa Malvín, Montevideo. Clases individuales y grupales, alquiler de equipos e instructores certificados para todos los niveles.",
 };
 
 export default function RootLayout({

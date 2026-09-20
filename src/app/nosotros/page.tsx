@@ -8,7 +8,7 @@ import { ArrowRightIcon } from "@/components/icons";
 export const metadata: Metadata = {
   title: "Nosotros — Maxymar Kiteschool",
   description:
-    "Conocé a Maximiliano Marenco, fundador e instructor principal de Maxymar Kiteschool en Playa Malvin, Montevideo.",
+    "Conocé a Maximiliano Marenco, fundador e instructor principal de Maxymar Kiteschool en Playa Malvín, Montevideo.",
 };
 
 export default function NosotrosPage() {
@@ -19,7 +19,7 @@ export default function NosotrosPage() {
           <SectionHeading
             eyebrow="Nosotros"
             title="Nacimos en la costa de Montevideo"
-            subtitle="Maxymar Kiteschool nace de las ganas de compartir el kitesurf en el spot que más queremos: Playa Malvin."
+            subtitle="Maxymar Kiteschool nace de las ganas de compartir el kitesurf en el spot que más queremos: Playa Malvín."
           />
         </Container>
       </section>
@@ -34,14 +34,14 @@ export default function NosotrosPage() {
               Guardavidas desde hace 20 años y técnico en natación,
               Maximiliano descubrió el kitesurf en 2016 en San José y, tras
               acumular experiencia dando clases en otras escuelas, en 2023 se
-              independizó para fundar Maxymar en Playa Malvin. Su formación
+              independizó para fundar Maxymar en Playa Malvín. Su formación
               como instructor internacional certificado por la IKO le permite
               ofrecer un sistema de enseñanza que combina metodología
               profesional con un fuerte énfasis en la seguridad, tanto en los
               materiales como en las técnicas de navegación.
             </p>
             <p className="mt-4 leading-relaxed text-ink-600">
-              Malvin, y en particular la Punta de los Pescadores, ofrece
+              Malvín, y en particular la Punta de los Pescadores, ofrece
               condiciones ideales para el kitesurf gracias al reparo natural
               de la Isla de las Gaviotas y a los vientos del sur que
               predominan gran parte del año. En Maxymar reciben tanto a

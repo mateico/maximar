@@ -28,7 +28,7 @@ export const SERVICES: Service[] = [
 	{
 		slug: "alquiler-de-equipos",
 		title: "Alquiler de equipos",
-		summary: "Para riders con experiencia que quieren salir a navegar por su cuenta en Playa Malvin.",
+		summary: "Para riders con experiencia que quieren salir a navegar por su cuenta en Playa Malvín.",
 		description:
 			"Equipos revisados y en buen estado (cometas, tablas y arneses) disponibles por hora, medio día o día completo, con asesoramiento sobre las condiciones del spot.",
 		details: [
@@ -56,7 +56,7 @@ export const SERVICES: Service[] = [
 	{
 		slug: "eventos-y-salidas",
 		title: "Eventos y salidas grupales",
-		summary: "Jornadas de kitesurf para grupos de amigos, empresas o cumpleaños en Playa Malvin.",
+		summary: "Jornadas de kitesurf para grupos de amigos, empresas o cumpleaños en Playa Malvín.",
 		description:
 			"Organizamos experiencias grupales con clases introductorias, exhibiciones y una tarde completa de viento y buena onda en la playa.",
 		details: [

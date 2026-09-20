@@ -6,7 +6,7 @@ import { ContactForm } from "@/components/ContactForm";
 export const metadata: Metadata = {
   title: "Contacto — Maxymar Kiteschool",
   description:
-    "Escribinos para reservar tu clase de kitesurf en Playa Malvin, Montevideo.",
+    "Escribinos para reservar tu clase de kitesurf en Playa Malvín, Montevideo.",
 };
 
 export default function ContactoPage() {
@@ -17,7 +17,7 @@ export default function ContactoPage() {
           <SectionHeading
             eyebrow="Contacto"
             title="Coordinemos tu clase"
-            subtitle="Contanos tu nivel y tu disponibilidad, y te respondemos con los mejores horarios según el viento en Playa Malvin."
+            subtitle="Contanos tu nivel y tu disponibilidad, y te respondemos con los mejores horarios según el viento en Playa Malvín."
           />
         </Container>
       </section>

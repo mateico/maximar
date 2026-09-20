@@ -6,7 +6,7 @@ import { POSTS } from "@/lib/posts";
 export const metadata: Metadata = {
   title: "Blog — Maxymar Kiteschool",
   description:
-    "Tips, guías y novedades sobre kitesurf en Playa Malvin, Montevideo.",
+    "Tips, guías y novedades sobre kitesurf en Playa Malvín, Montevideo.",
 };
 
 export default function BlogPage() {
@@ -17,7 +17,7 @@ export default function BlogPage() {
           <SectionHeading
             eyebrow="Blog"
             title="Tips, guías y novedades"
-            subtitle="Todo lo que necesitás saber sobre viento, equipo y técnica para tu próxima salida a Playa Malvin."
+            subtitle="Todo lo que necesitás saber sobre viento, equipo y técnica para tu próxima salida a Playa Malvín."
           />
         </Container>
       </section>

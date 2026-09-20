@@ -15,7 +15,7 @@ const ICON_STYLES = [
 export const metadata: Metadata = {
   title: "Servicios — Maxymar Kiteschool",
   description:
-    "Clases individuales, grupales, cursos de iniciación y alquiler de equipos de kitesurf en Playa Malvin, Montevideo.",
+    "Clases individuales, grupales, cursos de iniciación y alquiler de equipos de kitesurf en Playa Malvín, Montevideo.",
 };
 
 export default function ServiciosPage() {
@@ -26,7 +26,7 @@ export default function ServiciosPage() {
           <SectionHeading
             eyebrow="Servicios"
             title="Encontrá la forma perfecta de aprender"
-            subtitle="Desde tu primera clase hasta salir a navegar por tu cuenta: tenemos una propuesta para cada momento de tu progresión en Playa Malvin."
+            subtitle="Desde tu primera clase hasta salir a navegar por tu cuenta: tenemos una propuesta para cada momento de tu progresión en Playa Malvín."
           />
         </Container>
       </section>

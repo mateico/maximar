@@ -9,7 +9,7 @@ import { GALLERY } from "@/lib/gallery";
 export const metadata: Metadata = {
 	title: "Galería — Maxymar Kiteschool",
 	description:
-		"Fotos del instructor y de las clases y eventos de Maxymar Kiteschool en Playa Malvin, Montevideo.",
+		"Fotos del instructor y de las clases y eventos de Maxymar Kiteschool en Playa Malvín, Montevideo.",
 };
 
 export default function GaleriaPage() {
@@ -20,7 +20,7 @@ export default function GaleriaPage() {
 					<SectionHeading
 						eyebrow="Galería"
 						title="Momentos en el agua y en la playa"
-						subtitle="Una selección de fotos del instructor, las clases y los eventos de Maxymar en Playa Malvin."
+						subtitle="Una selección de fotos del instructor, las clases y los eventos de Maxymar en Playa Malvín."
 					/>
 				</Container>
 			</section>
@@ -68,7 +68,7 @@ export default function GaleriaPage() {
 							¿Querés ser parte de la próxima foto?
 						</h2>
 						<p className="mx-auto mt-4 max-w-xl text-ink-300">
-							Reservá tu clase y viví tu propia experiencia en Playa Malvin.
+							Reservá tu clase y viví tu propia experiencia en Playa Malvín.
 						</p>
 						<div className="mt-8 flex justify-center">
 							<Button href="/contacto" variant="primary">

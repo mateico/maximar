@@ -5,7 +5,6 @@ import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import {
   ArrowRightIcon,
-  MapPinIcon,
   MedalIcon,
   ShieldCheckIcon,
   UsersIcon,
@@ -33,7 +32,7 @@ const HIGHLIGHTS = [
     icon: WindIcon,
     title: "El mejor spot de Montevideo",
     description:
-      "Clases en Playa Malvin, con viento constante y un fondo de arena ideal para aprender.",
+      "Clases en Playa Malvín, con viento constante y un fondo de arena ideal para aprender.",
   },
   {
     icon: ShieldCheckIcon,
@@ -66,19 +65,14 @@ export default function Home() {
 
         <Container className="relative grid gap-6 sm:gap-12 py-6 sm:py-20 lg:grid-cols-2 lg:items-center lg:py-28">
           <div>
-            <span className="inline-flex items-center gap-2 rounded-full bg-white/70 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-ink-700 shadow-sm ring-1 ring-ink-900/5">
-              <MapPinIcon className="h-4 w-4 text-secondary" />
-              Playa Malvin
-            </span>
-
-            <h1 className="mt-6 font-heading text-4xl font-bold leading-[1.05] text-ink-950 sm:text-5xl lg:text-6xl">
+            <h1 className="font-heading text-4xl font-bold leading-[1.05] text-ink-950 sm:text-5xl lg:text-6xl">
               Sentí el viento.
               <br />
               <span className="text-secondary">Volá sobre el agua.</span>
             </h1>
 
             <p className="mt-6 max-w-lg text-lg leading-relaxed text-ink-600">
-              Escuela de kitesurf en la mejor playa. Instructores certificados
+              Escuela de kitesurf en Playa Malvín. Instructores certificados
               para que te subas a la tabla con confianza, sin importar tu nivel.
             </p>
 
@@ -237,7 +231,7 @@ export default function Home() {
               Nuestro spot
             </span>
             <h2 className="mt-4 font-heading text-3xl font-bold sm:text-4xl">
-              Playa Malvin, el mejor lugar para aprender
+              Playa Malvín, el mejor lugar para aprender
             </h2>
             <p className="mt-5 max-w-lg text-ink-200">
               Poca profundidad y viento constante gran parte del año: las
@@ -272,7 +266,7 @@ export default function Home() {
             <div className="absolute inset-0 flex flex-col items-center justify-center gap-3 text-center">
               <WaveIcon className="h-14 w-14 text-white/90" />
               <p className="font-heading text-2xl font-bold text-white drop-shadow">
-                Playa Malvin
+                Playa Malvín
               </p>
               <p className="text-sm font-medium text-white/80">
                 Montevideo, Uruguay
@@ -338,7 +332,7 @@ export default function Home() {
             </h2>
             <p className="relative mx-auto mt-4 max-w-xl text-brand-blue-50">
               Contanos tu nivel y coordinamos el mejor horario según el viento
-              en Playa Malvin.
+              en Playa Malvín.
             </p>
             <div className="relative mt-8 flex flex-wrap justify-center gap-4">
               <Button href="/contacto" variant="primary">

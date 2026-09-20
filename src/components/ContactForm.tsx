@@ -18,7 +18,7 @@ export function ContactForm() {
 			<div className="rounded-2xl bg-brand-blue-50 p-8 text-center">
 				<p className="font-heading text-xl font-bold text-ink-950">¡Gracias! 🪁</p>
 				<p className="mt-2 text-sm text-ink-600">
-					Recibimos tu mensaje. Te vamos a escribir a la brevedad para coordinar tu clase en Playa Malvin.
+					Recibimos tu mensaje. Te vamos a escribir a la brevedad para coordinar tu clase en Playa Malvín.
 				</p>
 			</div>
 		);
